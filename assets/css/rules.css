@@ -4,7 +4,7 @@
   }
   .intro h1 {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 75px;
   }
 
   .intro p {
@@ -12,6 +12,30 @@
     line-height: 24px;
   }
 }
+
+
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b233737f41138c4ce75_SharpGroteskLight20.woff2') format('woff2'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23ab020f0be782f56a_SharpGroteskLight20.eot') format('embedded-opentype'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23d3effb8f2f165571_SharpGroteskLight20.woff') format('woff'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23fefb7b4d67101315_SharpGroteskLight20.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23a2b63e214d1747d4_SharpGroteskMedium25.woff2') format('woff2'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b2311f71febd7ac57f1_SharpGroteskMedium25.eot') format('embedded-opentype'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23be8e9e4a4f4355c8_SharpGroteskMedium25.woff') format('woff'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23a30490bf46287606_SharpGroteskMedium25.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23fd23365bad1ca07c_SharpGroteskBold25.woff2') format('woff2'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b2390529c52f489f172_SharpGroteskBold25.eot') format('embedded-opentype'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23a2720f00d8ba3fc4_SharpGroteskBold25.woff') format('woff'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b2359b47515465deff8_SharpGroteskBold25.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* Small devices */
 @media (min-width: 576px) {
