@@ -17,13 +17,6 @@
 @media (min-width: 576px) {
   .navigation {
     padding: 37px;
-    top: 0;
-    overflow: visible;
-    box-shadow: none;
-  }
-
-  .logo_area {
-    margin-left: 4px;
   }
 
   .logo_area span {
@@ -37,23 +30,6 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .navigation {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center
-  }
-
-  .logo_area {
-    margin-right: 4px;
-    margin-bottom: 0;
-  }
-
   .container {
     width: 100% !important;
   }
@@ -62,10 +38,7 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .navigation {
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
+    padding: 1.5rem 3rem !important;
   }
 
   .logo_area span {
@@ -80,10 +53,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .navigation {
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
+    padding: 1.5rem 3rem !important;
   }
 
   .logo_area span {
