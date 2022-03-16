@@ -1,36 +1,59 @@
+@font-face {
+  font-family: 'Relative Book';
+  src: url('//cdn.shopify.com/s/files/1/0454/7765/8785/t/2/assets/relative-book.woff2?v=11635970414785995504') format("woff2"),
+    url('//cdn.shopify.com/s/files/1/0454/7765/8785/t/2/assets/relative-book.woff?v=10789837231858741245') format("woff"),
+    url('//cdn.shopify.com/s/files/1/0454/7765/8785/t/2/assets/relative-book.ttf?v=17797437444384127831') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Relative Faux';
+  src: url('//cdn.shopify.com/s/files/1/0454/7765/8785/t/2/assets/relative-faux-book.woff2?v=3187364654145133498') format("woff2"),
+    url('//cdn.shopify.com/s/files/1/0454/7765/8785/t/2/assets/relative-faux-book.woff?v=497390617964814026') format("woff"),
+    url('//cdn.shopify.com/s/files/1/0454/7765/8785/t/2/assets/relative-faux-book.ttf?v=10721233785886593583') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b233737f41138c4ce75_SharpGroteskLight20.woff2') format('woff2'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23ab020f0be782f56a_SharpGroteskLight20.eot') format('embedded-opentype'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23d3effb8f2f165571_SharpGroteskLight20.woff') format('woff'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23fefb7b4d67101315_SharpGroteskLight20.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23a2b63e214d1747d4_SharpGroteskMedium25.woff2') format('woff2'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b2311f71febd7ac57f1_SharpGroteskMedium25.eot') format('embedded-opentype'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23be8e9e4a4f4355c8_SharpGroteskMedium25.woff') format('woff'), url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23a30490bf46287606_SharpGroteskMedium25.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23fd23365bad1ca07c_SharpGroteskBold25.woff2') format('woff2'),
+    url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b2390529c52f489f172_SharpGroteskBold25.eot') format('embedded-opentype'),
+    url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b23a2720f00d8ba3fc4_SharpGroteskBold25.woff') format('woff'),
+    url('https://assets.website-files.com/601711aaa89c493284aa22d0/60175b2359b47515465deff8_SharpGroteskBold25.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  background-color: #000;
-  font-family: Inter, sans-serif
+  background: #ffeff2;
 }
 
-.invert {
-  filter: invert(100%) !important;
-  transition: all 0.5s ease !important;
-}
-
-.no-invert {
-  filter: invert(0%) !important;
-}
-
-::selection {
-  background: yellow;
-  color: black;
-}
-
-::-moz-selection {
-  background: yellow;
-  color: black;
-}
 
 a:hover,
 a:focus,
 a:active {
   text-decoration: none !important;
-}
-
-.bg-invert {
-  background-color: #100d08;
-  transition: all 1s linear 0s;
 }
 
 .navigation {
@@ -56,7 +79,7 @@ a:active {
   width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
-  background-color:transparent
+  background-color: transparent
 }
 
 .logo_area {
@@ -93,7 +116,8 @@ a:active {
 
 .logo_area span {
   display: none;
-  color: #ffffff;
+  color: #000;
+  font-size: 14px;
 }
 
 .container {
@@ -102,46 +126,77 @@ a:active {
   padding-right: 1.5rem !important;
 }
 
+.btn {
+  background-image: black;
+  background-size: 100% 90px;
+  background-position: 0 -30px;
+  transition: all 0.2s linear;
+  border: 0;
+  color: white
+}
+
+.btn:hover {
+  background-position: 0 0;
+  color: white;
+  opacity: .9;
+}
+
+
 .intro img {
   margin-bottom: 15px;
 }
 
-.intro h1 {
-  margin-top: 16px;
-  margin-bottom: 0;
-  color: white;
+.intro h1:first-child {
+  color: #ea4715;
+  margin-top: 60px;
+  font-family: 'Sharp Grotesk', sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
-.intro h1 span {
-  display: inline-block;
-  color: #999;
+.intro .subtitle {
+  font-family: 'Sharp Grotesk', sans-serif;
+  color: #000000;
+  font-weight: 900;
+  font-size: 34px;
 }
 
 .intro p {
-  margin-top: 40px;
-  color: #ccc;
+  margin-top: 20px;
+  color: #000 !important;
   font-size: 18px;
   line-height: 26px;
   font-weight: 500;
-}
-
-.intro .social-items {
-  margin-top: 3rem !important;
 }
 
 .intro .social-items i {
   display: inline-block;
   padding: 6px;
   border-radius: 6px;
-  -webkit-transition: background-color .2s ease;
-  transition: background-color .2s ease;
-  color: #fff;
+  color: #000 !important;
   text-decoration: none;
   font-size: 2em;
+  transition: .10s
 }
 
 .intro .social-items i:hover {
-  background-color: hsla(0, 0%, 100%, .15);
+  background: black;
+  color: white!important;
+}
+
+.one {
+  border: 0;
+  transition: .5s;
+  background: #1a1a1a;
+}
+
+.blogCard {
+  vertical-align: middle;
+  border: 0;
+  border-bottom: double .35em transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .brands {
@@ -187,11 +242,14 @@ a:active {
   cursor: pointer;
 }
 
-#modeToggle i {
-  background: white;
-  padding: 7px;
+#modeToggle .cc {
+  background: black;
   border-radius: 50%;
   font-size: 2em;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 35px;
 }
 
 .menu {
@@ -217,9 +275,155 @@ a:active {
   border-radius: 6px;
   transition: background-color .2s ease;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .menu_item a:hover {
-  background-color: hsla(0, 0%, 100%, .08)
+  background-color: black;
+  color: white;
+}
+
+.fa-times {
+  transition: .2s;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.fa-times:hover {
+  background: white;
+  color: black !important;
+  padding-top: 5px;
+  ;
+}
+
+.a-link:hover {
+  text-shadow: -11px 11px 0 #9d00ff;
+}
+
+.but {
+  background: black !important;
+  box-shadow: none !important;
+  border: 1.5px solid white !important;
+  color: white !important
+}
+
+.but:hover {
+  border: 1.5px solid black !important;
+  color: black !important;
+  background: #ea4715 !important;
+}
+
+.logo_area:hover>img {
+  transform: rotate(360deg);
+  transition: transform 0.8s ease-in-out;
+}
+
+
+.contact {
+  background: #ea4715 !important;
+  font-family: 'Sharp Grotesk', sans-serif;
+  box-shadow: 4px 4px 0px 1px rgb(0 0 0);
+  border: 2px solid black;
+  transition: .2s !important;
+}
+
+.contact:hover {
+  background: black !important;
+  color: white !important;
+  border: 1px solid black !important;
+  ;
+  box-shadow: 0px 0px 0px 0px black;
+}
+
+
+
+.one {
+  background: #eff2f7;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.one:hover {
+  border: 2px solid black;
+  background: black;
+}
+
+.one:hover img {
+  filter:invert(100);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.font-grotesk {
+  font-family: 'Sharp Grotesk', sans-serif;
+}
+
+.text-black {
+  color: #000;
+}
+
+.font-100 {
+  font-weight: 100;
+}
+
+.font-200 {
+  font-weight: 200;
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.font-800 {
+  font-weight: 800;
+}
+
+.font-900 {
+  font-weight: 900;
+}
+
+.banner {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999;
+  width: 400px;
+}
+
+.banner .card {
+  border-radius: 6px;
+  box-shadow: 8px 8px 0px 1px rgb(0 0 0);
+  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('https://media.giphy.com/media/8FiLPVIONxvJu7fgV4/source.gif');
+  color: white
+}
+
+.blogCard {
+  background-color: black;
+  color: white;
+  border-radius: 6px
 }
