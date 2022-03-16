@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9a573ed3-35a8-4915-89a0-f5aba4594a82" name="Bitlamp" url="http://adudzik.bitlampsites.com">
+        <fileTransfer rootFolder="/public_html" accessType="SFTP" host="adudzik.bitlampsites.com" port="22" sshConfigId="2a2d775b-71cd-442e-baa2-2a15789a7593" sshConfig="adudzik@adudzik.bitlampsites.com:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="0a21da1c-756a-4419-aed6-7fec9b7924f3" name="LIRWC" url="http://lirwc.bitlampsites.com">
+        <fileTransfer rootFolder="/public_html" accessType="SFTP" host="lirwc.bitlampsites.com" port="22" sshConfigId="e31c5b6c-103b-45d4-acec-b5e606e66b42" sshConfig="lirwc@lirwc.bitlampsites.com:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

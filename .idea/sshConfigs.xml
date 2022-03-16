@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="adudzik.bitlampsites.com" id="2a2d775b-71cd-442e-baa2-2a15789a7593" port="22" nameFormat="DESCRIPTIVE" username="adudzik" />
+      <sshConfig authType="PASSWORD" host="lirwc.bitlampsites.com" id="e31c5b6c-103b-45d4-acec-b5e606e66b42" port="22" nameFormat="DESCRIPTIVE" username="lirwc" />
+    </configs>
+  </component>
+</project>
